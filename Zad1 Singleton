@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class Singl {
+	
+	
+	private static ArrayList<String> lista= null;
+	
+	public static void add(String elem){
+		lista.add(elem);
+		}
+	
+	public static ArrayList<String> getLista(){
+		return lista;
+	}
+	
+	private static Singl singletonInstance = new Singl();
+	public static Singl getInstance(){
+		return singletonInstance;
+	}
+	
+	
+
+}
